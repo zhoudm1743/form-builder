@@ -1,0 +1,119 @@
+[
+  {
+    "type": "fcRow",
+    "children": [
+      {
+        "type": "col",
+        "children": [
+          {
+            "type": "input",
+            "field": "username",
+            "title": "用户账号",
+            "_fc_id": "id_Fpxdmacl42v3bic",
+            "name": "ref_Fdy5macl42v3bjc",
+            "display": true,
+            "hidden": false,
+            "_fc_drag_tag": "input"
+          },
+          {
+            "type": "select",
+            "field": "gender",
+            "title": "性别",
+            "props": {
+              "defaultValue": 1
+            },
+            "options": [
+              {
+                "label": "男",
+                "value": 1
+              },
+              {
+                "label": "女",
+                "value": 2
+              }
+            ],
+            "_fc_id": "id_Fmspmacl42v3bkc",
+            "name": "ref_Frfzmacl42v3blc",
+            "display": true,
+            "hidden": false,
+            "_fc_drag_tag": "select"
+          }
+        ],
+        "span": 6,
+        "_fc_id": "id_Fq2rmacl42v3bmc",
+        "name": "ref_Fb2smacl42v3bnc",
+        "display": true,
+        "hidden": false,
+        "_fc_drag_tag": "col"
+      },
+      {
+        "type": "col",
+        "children": [
+          {
+            "type": "elTreeSelect",
+            "field": "department",
+            "title": "所属部门",
+            "props": {
+              "data": [
+                {
+                  "children": [
+                    {
+                      "label": "前端组",
+                      "value": 11
+                    },
+                    {
+                      "label": "后端组",
+                      "value": 12
+                    }
+                  ],
+                  "label": "技术部",
+                  "value": 1
+                }
+              ],
+              "nodeKey": "value",
+              "showCheckbox": true
+            },
+            "_fc_id": "id_Fvd1macl42v3boc",
+            "name": "ref_Fy8xmacl42v3bpc",
+            "display": true,
+            "hidden": false,
+            "_fc_drag_tag": "elTreeSelect"
+          }
+        ],
+        "span": 6,
+        "_fc_id": "id_F4ybmacl42v3bqc",
+        "name": "ref_Ff48macl42v3brc",
+        "display": true,
+        "hidden": false,
+        "_fc_drag_tag": "col",
+        "computed": {
+          "hidden": {
+            "mode": "AND",
+            "group": [
+              {
+                "field": "gender",
+                "condition": "==",
+                "value": 1
+              }
+            ],
+            "invert": true
+          }
+        }
+      }
+    ],
+    "_fc_id": "id_Fj3nmacl42v3bsc",
+    "name": "ref_Fx53macl42v3btc",
+    "display": true,
+    "hidden": false,
+    "_fc_drag_tag": "fcRow"
+  },
+  {
+    "type": "elDivider",
+    "title": "分隔线",
+    "_fc_id": "id_Fvsnmacl42v3buc",
+    "name": "ref_Ftfdmacl42v3bvc",
+    "display": true,
+    "hidden": false,
+    "_fc_drag_tag": "elDivider"
+  }
+]
