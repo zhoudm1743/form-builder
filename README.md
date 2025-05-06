@@ -13,7 +13,7 @@
 
 ### 安装依赖
 ```bash
-go get form-builder/builder
+go get github.com/zhoudm1743/form-builder/builder
 ```
 
 ### 基础用法
@@ -21,9 +21,9 @@ go get form-builder/builder
 package main
 
 import (
-    "form-builder/builder"
-    "form-builder/builder/compoment"
-    "form-builder/builder/types"
+    "github.com/zhoudm1743/form-builder/builder"
+    "github.com/zhoudm1743/form-builder/builder/compoment"
+    "github.com/zhoudm1743/form-builder/builder/types"
 )
 
 func main() {
